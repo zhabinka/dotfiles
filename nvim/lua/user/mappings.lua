@@ -10,6 +10,10 @@ return {
 
     ["<C-г>"] = { "<C-G>u<C-U>", desc = "" },
     ["<C-ц>"] = { "<C-G>u<C-W>", desc = "" },
+
+
+    ["<C-s>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
+    ["<C-ы>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
   },
   x = {
     -- Change text without putting it into the vim register,
@@ -24,6 +28,8 @@ return {
     -- for russian layout
     ["л"] = { "gk", desc = "" },
     ["о"] = { "gj", desc = "" },
+
+    ["<leader>ц"] = { "<cmd>w<cr>", desc = "Save File" },
 
     -- navigate buffer tabs with `H` and `L`
     L = {
