@@ -4,9 +4,15 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
-  -- first key is the mode
+  x = {
+    -- Change text without putting it into the vim register,
+    -- see https://stackoverflow.com/q/54255/6064933
+    ["c"] = { "\"_c", desc = ""},
+  },
   n = {
-    -- second key is the lefthand side of the map
+    ["c"] = { "\"_c", desc = ""},
+    ["C"] = { "\"_C", desc = ""},
+    ["cc"] = { "\"_cc", desc = ""},
 
     -- navigate buffer tabs with `H` and `L`
     L = {
