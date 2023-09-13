@@ -31,6 +31,10 @@ return {
 
     ["<leader>ц"] = { "<cmd>w<cr>", desc = "Save File" },
 
+    -- Go to start or end of line easier
+    ["<C-[>"] = { "^", desc = "Go to start line"},
+    ["<C-]>"] = { "g_", desc = "Go to end line"},
+
     -- navigate buffer tabs with `H` and `L`
     L = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
