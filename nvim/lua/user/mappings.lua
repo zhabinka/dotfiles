@@ -4,6 +4,13 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
+  i = {
+    -- Выход из режима вставки
+    ["<c-х>"] = { "<C-[>", desc = "" },
+
+    ["<C-г>"] = { "<C-G>u<C-U>", desc = "" },
+    ["<C-ц>"] = { "<C-G>u<C-W>", desc = "" },
+  },
   x = {
     -- Change text without putting it into the vim register,
     -- see https://stackoverflow.com/q/54255/6064933
@@ -13,6 +20,10 @@ return {
     ["c"] = { "\"_c", desc = ""},
     ["C"] = { "\"_C", desc = ""},
     ["cc"] = { "\"_cc", desc = ""},
+
+    -- for russian layout
+    ["л"] = { "gk", desc = "" },
+    ["о"] = { "gj", desc = "" },
 
     -- navigate buffer tabs with `H` and `L`
     L = {
