@@ -11,9 +11,10 @@ return {
     ["<C-г>"] = { "<C-G>u<C-U>", desc = "" },
     ["<C-ц>"] = { "<C-G>u<C-W>", desc = "" },
 
-
     ["<C-s>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
     ["<C-ы>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
+
+    ["<C-d>"] = { "<DEL>", desc = "Delete character right of the cursor" },
   },
   x = {
     -- Change text without putting it into the vim register,
