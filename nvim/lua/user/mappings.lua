@@ -38,6 +38,14 @@ return {
     ["<C-a>"] = { "<HOME>", desc = "Go to start line"},
     ["<C-e>"] = { "<END>", desc = "Go to end line"},
 
+    -- Move line
+    ["<A-j>"] = { "<cmd>m .+1<cr>==", desc = "Move line down" },
+    ["<A-k>"] = { "<cmd>m .-2<cr>==", desc = "Move line up" },
+    -- map("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
+    -- map("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
+    -- map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
+    -- map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
+
     -- navigate buffer tabs with `H` and `L`
     L = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
