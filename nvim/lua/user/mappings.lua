@@ -35,6 +35,8 @@ return {
     -- Go to start or end of line easier
     ["<C-[>"] = { "^", desc = "Go to start line"},
     ["<C-]>"] = { "g_", desc = "Go to end line"},
+    ["<C-a>"] = { "<HOME>", desc = "Go to start line"},
+    ["<C-e>"] = { "<END>", desc = "Go to end line"},
 
     -- navigate buffer tabs with `H` and `L`
     L = {
