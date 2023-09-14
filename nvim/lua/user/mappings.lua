@@ -5,8 +5,7 @@
 -- automatically pick-up stored data by this setting.)
 return {
   i = {
-    -- Выход из режима вставки
-    ["<c-х>"] = { "<C-[>", desc = "" },
+    ["<c-х>"] = { "<C-[>", desc = "Выход их режима редактирования в русской раскладке" },
 
     ["<C-г>"] = { "<C-G>u<C-U>", desc = "" },
     ["<C-ц>"] = { "<C-G>u<C-W>", desc = "" },
