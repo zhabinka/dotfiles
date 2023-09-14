@@ -20,6 +20,9 @@ return {
     -- Change text without putting it into the vim register,
     -- see https://stackoverflow.com/q/54255/6064933
     ["c"] = { "\"_c", desc = ""},
+
+    ["<C-[>"] = { "^", desc = "Select from cursor to start of line"},
+    ["<C-]>"] = { "g_", desc = "Select from cursor to end of line"},
   },
   n = {
     ["c"] = { "\"_c", desc = ""},
