@@ -46,6 +46,9 @@ return {
     -- map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
     -- map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 
+    ["<Enter>"] = { ":call append(line('.'), '')<CR>", desc = "Add blank line above the cursor" },
+    ["<S-Enter>"] = { ":call append(line('.')-1, '')<CR>", desc = "Add blank line below cursor" },
+
     -- navigate buffer tabs with `H` and `L`
     L = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
