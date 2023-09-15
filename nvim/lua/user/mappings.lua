@@ -51,6 +51,9 @@ return {
     ["<Enter>"] = { ":call append(line('.'), '')<CR>", desc = "Add blank line above the cursor" },
     ["<S-Enter>"] = { ":call append(line('.')-1, '')<CR>", desc = "Add blank line below cursor" },
 
+    ["<leader>i"] = { "i<space><esc>", desc = "Add space before pointer"},
+    ["<leader>a"] = { "a<space><esc>", desc = "Add space after pointer"},
+
     -- navigate buffer tabs with `H` and `L`
     L = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
