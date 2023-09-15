@@ -14,19 +14,22 @@ return {
     ["<C-ы>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
 
     ["<C-d>"] = { "<DEL>", desc = "Delete character right of the cursor" },
+
+    ["<C-Enter>"] = { "<esc>o", desc = "Add blank line above pointer and go to it" },
+    ["<S-Enter>"] = { "<esc>O", desc = "Add blank line below pointer and go to it" },
   },
   x = {
     -- Change text without putting it into the vim register,
     -- see https://stackoverflow.com/q/54255/6064933
-    ["c"] = { "\"_c", desc = ""},
+    ["c"] = { "\"_c", desc = "" },
 
-    ["<C-[>"] = { "^", desc = "Select from cursor to start of line"},
-    ["<C-]>"] = { "g_", desc = "Select from cursor to end of line"},
+    ["<C-[>"] = { "^", desc = "Select from cursor to start of line" },
+    ["<C-]>"] = { "g_", desc = "Select from cursor to end of line" },
   },
   n = {
-    ["c"] = { "\"_c", desc = ""},
-    ["C"] = { "\"_C", desc = ""},
-    ["cc"] = { "\"_cc", desc = ""},
+    ["c"] = { "\"_c", desc = "" },
+    ["C"] = { "\"_C", desc = "" },
+    ["cc"] = { "\"_cc", desc = "" },
 
     -- for russian layout
     ["л"] = { "gk", desc = "" },
@@ -35,10 +38,10 @@ return {
     ["<leader>ц"] = { "<cmd>w<cr>", desc = "Save File" },
 
     -- Go to start or end of line easier
-    ["<C-[>"] = { "^", desc = "Go to start line"},
-    ["<C-]>"] = { "g_", desc = "Go to end line"},
-    ["<C-a>"] = { "<HOME>", desc = "Go to start line"},
-    ["<C-e>"] = { "<END>", desc = "Go to end line"},
+    ["<C-[>"] = { "^", desc = "Go to start line" },
+    ["<C-]>"] = { "g_", desc = "Go to end line" },
+    ["<C-a>"] = { "<HOME>", desc = "Go to start line" },
+    ["<C-e>"] = { "<END>", desc = "Go to end line" },
 
     -- Move line
     ["<A-j>"] = { "<cmd>m .+1<cr>==", desc = "Move line down" },
@@ -49,12 +52,13 @@ return {
     -- map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 
     ["<Enter>"] = { ":call append(line('.'), '')<CR>", desc = "Add blank line above the cursor" },
+    ["<C-Enter>"] = { ":call append(line('.'), '')<CR>", desc = "Add blank line above the cursor" },
     ["<S-Enter>"] = { ":call append(line('.')-1, '')<CR>", desc = "Add blank line below cursor" },
 
-    ["<leader>i"] = { "i<space><esc>", desc = "Add space before pointer"},
-    ["<leader>a"] = { "a<space><esc>", desc = "Add space after pointer"},
-    ["_i"] = { "i_<esc>", desc = "Add underscore before pointer"},
-    ["_a"] = { "a_<esc>", desc = "Add underscore after pointer"},
+    ["<space>i"] = { "i<space><esc>", desc = "Add space before pointer" },
+    ["<space>a"] = { "a<space><esc>", desc = "Add space after pointer" },
+    ["_i"] = { "i_<esc>", desc = "Add underscore before pointer" },
+    ["_a"] = { "a_<esc>", desc = "Add underscore after pointer" },
 
     -- navigate buffer tabs with `H` and `L`
     L = {
