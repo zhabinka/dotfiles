@@ -53,6 +53,8 @@ return {
 
     ["<leader>i"] = { "i<space><esc>", desc = "Add space before pointer"},
     ["<leader>a"] = { "a<space><esc>", desc = "Add space after pointer"},
+    ["_i"] = { "i_<esc>", desc = "Add underscore before pointer"},
+    ["_a"] = { "a_<esc>", desc = "Add underscore after pointer"},
 
     -- navigate buffer tabs with `H` and `L`
     L = {
