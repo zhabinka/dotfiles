@@ -9,6 +9,7 @@ return {
     wrap = true, -- sets vim.opt.wrap
     spelllang = "ru_ru,en_us",
     langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
+    laststatus = 0, -- hide statusline by default
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
