@@ -1,10 +1,9 @@
 return {
-  -- Add plugins, the lazy syntax
   {
-    "ellisonleao/gruvbox.nvim",
-    name = "gruvbox",
-    config = function()
-      require("gruvbox").setup({})
-    end,
-  },
+    -- https://github.com/mbbill/undotree
+    --TODO: Read README
+    --TODO: Assign :UndotreeToggle key
+    "mbbill/undotree",
+    event = "VeryLazy",
+  }
 }
