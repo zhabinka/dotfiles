@@ -9,6 +9,12 @@ return {
       overrides = {
         FoldColumn = { bg = "#f2e5bc" },
         SignColumn = { bg = "#f2e5bc" },
+        GitSignsAdd = { fg = "#98971a", bg = "#f2e5bc", reverse = false },
+        GitSignsChange = { fg = "#689d6a", bg = "#f2e5bc", reverse = false },
+        GitSignsDelete = { fg = "#cc241d", bg = "#f2e5bc", reverse = false },
+        -- GitSignsAdd = { link = "GruvboxGreenSign" },
+        -- GitSignsChange = { link = "GruvboxAquaSign" },
+        -- GitSignsDelete = { link = "GruvboxRedSign" },
       },
     })
   end,
