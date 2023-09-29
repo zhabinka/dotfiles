@@ -22,3 +22,6 @@ nvim-install:
 
 	ln -snf $(PWD)/$(NVIM_USER_CONFIG_DIR) ~/.config/nvim/lua
 	nvim  --headless -c 'quitall'
+
+links:
+	ln -snf $(PWD)/.zshrc ~/.zshrc
