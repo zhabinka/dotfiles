@@ -118,6 +118,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export HOMEBREW_NO_AUTO_UPDATE="1"
 export ASDF_CONFIG_FILE=${HOME}/dotfiles/.asdfrc
 
+# https://github.com/kerl/kerl#kerl-options
 # export KERL_CONFIGURE_OPTIONS="--disable-hipe \
 #                                --disable-sctp \
 #                                --disable-silent-rules \
