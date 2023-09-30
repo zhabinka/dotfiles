@@ -5,8 +5,13 @@ return
   event = "VeryLazy",
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
+    keywords = {
+      TODO = { icon = " " },
+      HACK = { icon = " "},
+      WARN = { icon = " ", color = "#cc241d" },
+      PERF = { icon = " ", color = "#8f3f71" },
+      TEST = { icon = " ", color = "#d65d0e" },
+      NOTE = { icon = " ", alt = { "INFO" } },
+    },
   },
 }

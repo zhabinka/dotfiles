@@ -72,6 +72,11 @@ return {
       desc = "Previous buffer",
     },
 
+    -- Use todo-comments plugin
+    ["]t"] = { function() require("todo-comments").jump_next() end, desc = "Next todo comment" },
+    ["[t"] = { function() require("todo-comments").jump_prev() end, desc = "Previous todo comment" },
+    ["<leader>fT"] = { "<cmd>:TodoTelescope<cr>", desc = "Show todo comments with Telescope" },
+
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
