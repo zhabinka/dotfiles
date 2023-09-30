@@ -6,8 +6,6 @@
 return {
   i = {
     ["<c-х>"] = { "<C-[>", desc = "Exit from insert mode" },
-    ["oo"] = { "<C-[>", desc = "Exit from insert mode" },
-    ["oл"] = { "<C-[>", desc = "Exit from insert mode" },
 
     ["<C-г>"] = { "<C-G>u<C-U>", desc = "" },
     ["<C-ц>"] = { "<C-G>u<C-W>", desc = "" },
