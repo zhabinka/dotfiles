@@ -17,6 +17,12 @@ return {
 
     ["<C-Enter>"] = { "<esc>o", desc = "Add blank line above pointer and go to it" },
     ["<S-Enter>"] = { "<esc>O", desc = "Add blank line below pointer and go to it" },
+    ["<C-j>"] = { "<C-[>gji", desc = "Move to next line" },
+    ["<C-k>"] = { "<C-[>gki", desc = "Move to prev line" },
+    ["<C-l>"] = { "<C-[>la", desc = "Move to next char" },
+    ["<C-h>"] = { "<C-[>i", desc = "Move to prev char" },
+    ["<C-a>"] = { "<C-[>A", desc = "Move to end of line" },
+    ["<C-i>"] = { "<C-[>I", desc = "Move to start of line" },
   },
   x = {
     -- Change text without putting it into the vim register,
