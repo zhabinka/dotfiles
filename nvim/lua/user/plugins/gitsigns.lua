@@ -3,6 +3,7 @@ return {
   "lewis6991/gitsigns.nvim",
   opts = function(_, config)
     config = {
+      -- TODO : fix sign column background hover
       -- signcolumn = false,
       -- numhl = true,
     }
