@@ -7,10 +7,10 @@ return {
     spell = false,          -- sets vim.opt.spell
     signcolumn = "yes",     -- sets vim.opt.signcolumn to auto
     wrap = true,            -- sets vim.opt.wrap
+    laststatus = 0,         -- hide statusline by default
     spelllang = "ru_ru,en_us",
     langmap =
     "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
-    laststatus = 0, -- hide statusline by default
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader
