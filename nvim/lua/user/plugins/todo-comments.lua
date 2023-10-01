@@ -2,7 +2,7 @@
 return
 {
   "folke/todo-comments.nvim",
-  event = "VeryLazy",
+  event = "User AstroFile",
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {
     keywords = {
