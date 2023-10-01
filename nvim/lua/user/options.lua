@@ -25,6 +25,9 @@ return {
   -- o = {
   --   background = "dark",
   -- },
+  lsp = {
+    set_log_level = "off", -- disable logging
+  }
 }
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
