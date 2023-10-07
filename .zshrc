@@ -155,6 +155,13 @@ alias rmd='rm -rf'
 alias getip="curl ifconfig.me"
 
 alias ll='ls -la'
+
+# https://github.com/ogham/exa
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa"
+    alias la="exa --long --all --group --group-directories-first"
+fi
+
 alias lsg="ls -aF | grep";
 alias hisg="history | grep -i";
 alias ecomcharge='cd ~/ecomcharge'
