@@ -12,6 +12,7 @@ return
       PERF = { icon = " ", color = "#8f3f71" },
       TEST = { icon = " ", color = "#d65d0e" },
       NOTE = { icon = " ", alt = { "INFO" } },
+      TEMP = { icon = " ", color = "#7c6f64" },
     },
   },
 }
