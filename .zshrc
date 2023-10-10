@@ -118,31 +118,14 @@ export PATH="$HOME/.local/bin:$PATH"
 export HOMEBREW_NO_AUTO_UPDATE="1"
 export ASDF_CONFIG_FILE=${HOME}/dotfiles/.asdfrc
 
-# https://github.com/kerl/kerl#kerl-options
-# export KERL_CONFIGURE_OPTIONS="--disable-hipe \
-#                                --disable-sctp \
-#                                --disable-silent-rules \
-#                                --enable-darwin-64bit \
-#                                --enable-dynamic-ssl-lib \
-#                                --enable-kernel-poll \
-#                                --enable-shared-zlib \
-#                                --enable-smp-support \
-#                                --enable-threads \
-#                                --enable-wx \
-#                                --with-wx-config=/usr/local/Cellar/wxwidgets/3.2.2.1_1/bin/wx-config \
-#                                --without-javac \
-#                                --without-jinterface \
-#                                --without-odbc"
+zstyle ':completion:*:*:make:*' tag-order 'targets'
 
+# Erlang & Elixir
 export KERL_CONFIGURE_OPTIONS="--enable-wx \
                                --with-wx-config=/usr/local/Cellar/wxwidgets/3.2.2.1_1/bin/wx-config \
                                --without-jinterface"
 
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-zstyle ':completion:*:*:make:*' tag-order 'targets'
-
-# Elixir
 export ERL_AFLAGS="-kernel shell_history enabled"
 alias iexm='iex -S mix'
 alias melixir='cd ~/sandbox/elixir'
