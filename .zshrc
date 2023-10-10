@@ -147,11 +147,13 @@ fi
 
 alias lsg="ls -aF | grep";
 alias hisg="history | grep -i";
-alias ecomcharge='cd ~/ecomcharge'
-alias boapi='cd ~/ecomcharge/boapi'
+alias mecomcharge='cd ~/ecomcharge'
+alias mboapi='cd ~/ecomcharge/boapi'
+alias mbeteam='cd ~/ecomcharge/be_team/'
 alias tmp='cd ~/tmp'
 alias msandbox='cd ~/sandbox'
 alias mdotfiles='cd ~/dotfiles'
+alias vzshr='v ~/dotfiles/.zshrc'
 alias t='make test'
 alias s='make start'
 alias b='make build'
