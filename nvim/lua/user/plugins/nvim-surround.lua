@@ -1,12 +1,30 @@
+-- https://github.com/kylechui/nvim-surround
 return {
-{
-    -- https://github.com/kylechui/nvim-surround
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-    config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
-    end
-}}
+  "kylechui/nvim-surround",
+  version = "*",
+  event = "VeryLazy",
+  config = function()
+    require("nvim-surround").setup(
+      -- Jump to the nearest surrounding pair for modification
+
+      -- keymaps = {
+        -- normal = "ys",
+        -- normal_cur = "yss",
+        -- normal_line = "yS",
+        -- normal_cur_line = "ySS",
+        -- visual = "S",
+        -- visual_line = "gS",
+        -- delete = "ds",
+        -- change = "cs",
+      -- },
+      -- aliases = {
+        -- ["a"] = ">",
+        -- ["b"] = ")",
+        -- ["B"] = "}",
+        -- ["r"] = "]",
+        -- ["q"] = { '"', "'", "`" },
+        -- ["s"] = { "}", "]", ")", ">", '"', "'", "`" },
+      -- },
+    )
+  end,
+}
