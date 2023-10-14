@@ -33,6 +33,9 @@ return {
     ["<C-]>"] = { "g_", desc = "Select from cursor to end of line" },
   },
   n = {
+    ["<leader>ml"] = { "<cmd>CellularAutomaton make_it_rain<CR>", desc = "Make It Rain Cellular Automaton" },
+    ["<leader>mk"] = { "<cmd>CellularAutomaton game_of_life<CR>", desc = "Game Of Life Cellular Automaton" },
+
     ["c"] = { "\"_c", desc = "" },
     ["C"] = { "\"_C", desc = "" },
     ["cc"] = { "\"_cc", desc = "" },
