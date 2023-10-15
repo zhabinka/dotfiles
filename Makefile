@@ -25,3 +25,10 @@ nvim-install:
 
 links:
 	ln -snf $(PWD)/.zshrc ~/.zshrc
+	ln -snf $(PWD)/.dive.yaml ~/.dive.yaml
+
+setup: install links
+
+install:
+	brew install exa
+
