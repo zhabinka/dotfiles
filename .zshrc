@@ -125,7 +125,6 @@ export KERL_CONFIGURE_OPTIONS="--enable-wx \
                                --with-wx-config=/usr/local/Cellar/wxwidgets/3.2.2.1_1/bin/wx-config \
                                --without-jinterface"
 
-
 export ERL_AFLAGS="-kernel shell_history enabled"
 alias iexm='iex -S mix'
 alias phx='iex -S mix phx.server'
@@ -138,14 +137,13 @@ alias mkdir='mkdir -p'
 alias rmd='rm -rf'
 alias getip="curl ifconfig.me"
 
-alias ll='ls -la'
-
 # https://github.com/ogham/exa
 if [ -x "$(command -v exa)" ]; then
     alias ls="exa"
     alias la="exa --long --all --group --group-directories-first"
 fi
 
+alias ll='ls -la'
 alias lsg="ls -aF | grep";
 alias hisg="history | grep -i";
 alias mecomcharge='cd ~/ecomcharge'
