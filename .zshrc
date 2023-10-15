@@ -128,6 +128,7 @@ export KERL_CONFIGURE_OPTIONS="--enable-wx \
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 alias iexm='iex -S mix'
+alias phx='iex -S mix phx.server'
 alias melixir='cd ~/sandbox/elixir'
 
 alias nvim='rm -rf ~/.cache/nvim;nvim'
