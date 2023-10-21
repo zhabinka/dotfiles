@@ -165,12 +165,20 @@ alias push='git push -u origin $(git rev-parse --abbrev-ref HEAD) $@'
 alias l='git log -10'
 alias gcm='git commit -m' # overriding
 alias gai='git add -i'
-alias grsh='git reset --soft HEAD^'
+
+git() {
+    if [ "$1" = "amend" ]; then
+        shift
+        git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend "$@"
+    elif [ "$1" = "undo" ]; then
+        shift
+        git reset --soft HEAD^
+    else
+        command git "$@"
+    fi
+}
 
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/README.md
-
-# gpf='git push --force-with-lease --force-if-includes'
-# gpf!='git push --force'
 
 alias gdst='git diff --stat'
 # gdca='git diff --cached'
@@ -182,21 +190,12 @@ alias gdst='git diff --stat'
 # gdnolock='git diff $@ ":(exclude)package-lock.json" ":(exclude)*.lock"'
 # gdt='git diff-tree --no-commit-id --name-only -r'
 
-# alias gst='git status'
-# alias ga='git add'
-# alias gaa='git add .'
-# alias gcam='git commit -am'
-# alias gl='git pull'
 # alias gpl='git pull'
 # alias gcl='git clone'
-# alias grv='git remote -v'
 # alias gc='git commit -v'
 # alias gc!='git commit -v --amend'
 # alias gco='git checkout'
 # alias gcob='git checkout -b'
-# alias grh='git reset HEAD~1'
-# alias grh!='git reset --hard HEAD~1'
-# git restore CONTRIBUTING.md
 
 # setopt INTERACTIVE_COMMENTS
 
