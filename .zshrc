@@ -199,6 +199,8 @@ alias gdst='git diff --stat'
 # alias gco='git checkout'
 # alias gcob='git checkout -b'
 
+alias dps='docker ps'
+
 # setopt INTERACTIVE_COMMENTS
 
 # set -o vi
