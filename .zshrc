@@ -64,12 +64,14 @@ export ZSH="$HOME/.oh-my-zsh"
 
 plugins=(
   git
+  docker                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
+  docker-compose          # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose
   mix
-  # mix-fast # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix-fast
-  # zsh-autosuggestions # https://github.com/zsh-users/zsh-autosuggestions
+  # mix-fast                # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix-fast
+  # zsh-autosuggestions     # https://github.com/zsh-users/zsh-autosuggestions
   web-search
   zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
-  z # https://github.com/agkozak/zsh-z
+  z                       # https://github.com/agkozak/zsh-z
 )
 
 source $ZSH/oh-my-zsh.sh
