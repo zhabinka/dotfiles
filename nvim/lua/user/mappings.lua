@@ -10,19 +10,21 @@ return {
     ["<C-г>"] = { "<C-G>u<C-U>", desc = "" },
     ["<C-ц>"] = { "<C-G>u<C-W>", desc = "" },
 
-    ["<C-s>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
+    ["<C-s>"] = { "<cmd>w<cr><esc>", desc = "Save File with insert mode" },
     ["<C-ы>"] = { "<cmd>w<cr><esc>", desc = "Save File" },
 
     ["<C-d>"] = { "<DEL>", desc = "Delete character right of the cursor" },
 
     ["<C-Enter>"] = { "<esc>o", desc = "Add blank line above pointer and go to it" },
     ["<S-Enter>"] = { "<esc>O", desc = "Add blank line below pointer and go to it" },
-    ["<C-j>"] = { "<C-[>gji", desc = "Move to next line" },
-    ["<C-k>"] = { "<C-[>gki", desc = "Move to prev line" },
-    ["<C-l>"] = { "<C-[>la", desc = "Move to next char" },
-    ["<C-h>"] = { "<C-[>i", desc = "Move to prev char" },
-    ["<C-a>"] = { "<C-[>A", desc = "Move to end of line" },
-    ["<C-i>"] = { "<C-[>I", desc = "Move to start of line" },
+    ["<C-j>"] = { "<esc>gji", desc = "Move to next line" },
+    ["<C-k>"] = { "<esc>gki", desc = "Move to prev line" },
+    ["<C-l>"] = { "<esc>la", desc = "Move to next char" },
+    ["<C-h>"] = { "<esc>i", desc = "Move to prev char" },
+    ["<C-a>"] = { "<esc>A", desc = "Move to end of line" },
+    ["<C-i>"] = { "<esc>I", desc = "Move to start of line" },
+    ["<C-;>"] = { "<esc>;a", desc = "Reapet previous f, t, F or T movement" },
+    ["<C-,>"] = { "<esc>,a", desc = "Reapet previous f, t, F or T movement, backwards" },
   },
   x = {
     -- Change text without putting it into the vim register,
