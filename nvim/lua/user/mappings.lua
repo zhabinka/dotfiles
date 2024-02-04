@@ -94,8 +94,12 @@ return {
     -- Use todo-comments plugin
     ["]n"] = { function() require("todo-comments").jump_next() end, desc = "Next todo comment" },
     ["[n"] = { function() require("todo-comments").jump_prev() end, desc = "Previous todo comment" },
-    -- Shadow Show notifications
+    -- Search notifications
     ["<leader>fn"] = { "<cmd>:TodoTelescope<cr>", desc = "Show todo comments with Telescope" },
+
+    -- Search sessions
+    ["<leader>fs"] = { "<cmd>SessionManager! load_session<cr>", desc = "Search sessions (<leader>Sf)" },
+    ["<leader>fls"] = { "<cmd>SessionManager! load_last_session<cr>", desc = "Load last session (<leader>Sl)" },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
