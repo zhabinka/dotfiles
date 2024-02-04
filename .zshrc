@@ -206,3 +206,4 @@ alias dps='docker ps'
 # set -o vi
 
 alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
+alias vcube='v ~/tmp/cube.md'
