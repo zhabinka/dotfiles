@@ -150,6 +150,7 @@ alias lsg="ls -aF | grep";
 alias hisg="history | grep -i";
 alias mecomcharge='cd ~/ecomcharge'
 alias mboapi='cd ~/ecomcharge/boapi'
+alias mwls='cd ~/ecomcharge/wls'
 alias mbeteam='cd ~/ecomcharge/be_team/'
 alias tmp='cd ~/tmp'
 alias msandbox='cd ~/sandbox'
