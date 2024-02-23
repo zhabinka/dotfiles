@@ -34,6 +34,6 @@ return {
         vim.keymap.set("n", "<leader>nb", "<cmd>ObsNvimBacklinks<cr>")
         vim.keymap.set("n", "<leader>nfj", "<cmd>ObsNvimFindInJournal<cr>")
         vim.keymap.set("n", "<leader>nff", "<cmd>ObsNvimFindNote<cr>")
-        vim.keymap.set("n", "<leader>nfg", "<cmd>ObsNvimFindInNotes<cr>")
+        vim.keymap.set("n", "<leader>nfw", "<cmd>ObsNvimFindInNotes<cr>")
     end,
 }
