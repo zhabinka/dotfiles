@@ -15,7 +15,9 @@ return {
             vault_home = "~/notes",
             vault_name = "notes",
             journal = {
-                template_name = "daily",
+                template_name = "note",
+                daily_template_name = "daily",
+                weekly_template_name = "weekly",
             },
         }
 
