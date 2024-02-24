@@ -133,9 +133,9 @@ alias phx='iex -S mix phx.server'
 alias melixir='cd ~/sandbox/elixir'
 
 alias v='nvim'
-alias nvim='rm -rf ~/.cache/nvim;v'
-alias vnvim='nvim ~/dotfiles/nvim/lua/user/'
-alias vastronvim='cd  ~/.config/nvim'
+alias nvim='rm -rf ~/.cache/nvim;nvim'
+alias vnvim='v ~/dotfiles/nvim/lua/user/'
+alias vastronvim='v  ~/.config/nvim'
 alias vzshr='v ~/dotfiles/.zshrc'
 
 alias mkdir='mkdir -p'
