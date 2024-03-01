@@ -1,6 +1,6 @@
--- https://github.com/folke/todo-comments.nvim
 return
 {
+  -- https://github.com/folke/todo-comments.nvim
   "folke/todo-comments.nvim",
   event = "User AstroFile",
   dependencies = { "nvim-lua/plenary.nvim" },

@@ -1,5 +1,5 @@
--- https://github.com/IlyasYOY/obs.nvim
 return {
+    -- https://github.com/IlyasYOY/obs.nvim
     "IlyasYOY/obs.nvim",
     event = "VeryLazy",
     dependencies = {

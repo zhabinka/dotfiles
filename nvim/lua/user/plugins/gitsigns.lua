@@ -1,5 +1,5 @@
--- https://github.com/lewis6991/gitsigns.nvim
 return {
+  -- https://github.com/lewis6991/gitsigns.nvim
   "lewis6991/gitsigns.nvim",
   opts = function(_, config)
     config = {

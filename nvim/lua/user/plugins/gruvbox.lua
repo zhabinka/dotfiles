@@ -1,6 +1,5 @@
--- https://github.com/ellisonleao/gruvbox.nvim
--- local colors = require("gruvbox.palette")
 return {
+  -- https://github.com/ellisonleao/gruvbox.nvim
   "ellisonleao/gruvbox.nvim",
   name = "gruvbox",
   config = function()
