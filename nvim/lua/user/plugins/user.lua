@@ -10,5 +10,10 @@ return {
     -- https://github.com/Eandrju/cellular-automaton.nvim
     "eandrju/cellular-automaton.nvim",
     event = "VeryLazy"
+  },
+  {
+    -- https://github.com/tpope/vim-dotenv
+    'tpope/vim-dotenv',
+    event = "VeryLazy"
   }
 }
