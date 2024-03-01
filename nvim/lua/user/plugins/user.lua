@@ -12,6 +12,11 @@ return {
     event = "VeryLazy"
   },
   {
+    -- https://github.com/tpope/vim-dadbod
+   'tpope/vim-dadbod',
+    event = "VeryLazy"
+  },
+  {
     -- https://github.com/tpope/vim-dotenv
     'tpope/vim-dotenv',
     event = "VeryLazy"
