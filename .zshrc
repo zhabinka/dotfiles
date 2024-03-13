@@ -154,6 +154,7 @@ alias hisg="history | grep -i";
 alias mecomcharge='cd ~/ecomcharge'
 alias mboapi='cd ~/ecomcharge/boapi'
 alias mwls='cd ~/ecomcharge/wls'
+alias msql='cd ~/sql'
 alias mnotes='cd ~/notes'
 alias tmp='cd ~/tmp'
 alias msandbox='cd ~/sandbox'
