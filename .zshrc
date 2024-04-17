@@ -180,6 +180,9 @@ git() {
     elif [ "$1" = "undo" ]; then
         shift
         git reset --soft HEAD^
+    elif [ "$1" = "clean" ]; then
+        shift
+        git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
     else
         command git "$@"
     fi
