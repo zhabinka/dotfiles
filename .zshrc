@@ -171,6 +171,7 @@ alias push='git push -u origin $(git rev-parse --abbrev-ref HEAD) $@'
 alias l='git log -10'
 alias gcm='git commit -m' # overriding
 alias gai='git add -i'
+alias gcob='git checkout -b' # double plugin alias gcb
 alias grpo='git remote prune origin'  # delete all branches that are not on the remote server
 
 git() {
