@@ -3,10 +3,7 @@ NVIM_USER_CONFIG_DIR=nvim/lua/user
 nvim-requirements:
 	npm install -g tree-sitter-cli
 	# https://github.com/BurntSushi/ripgrep
-	# https://github.com/jesseduffield/lazygit
-	# https://github.com/dundee/gdu
-	# https://github.com/ClementTsang/bottom
-	brew install ripgrep lazygit gdu bottom
+	brew install ripgrep
 
 nvim-remove:
 	rm -rf ~/.config/nvim
@@ -30,5 +27,18 @@ links:
 setup: install links
 
 install:
-	brew install exa
-
+	brew install \
+		exa \               # https://github.com/ogham/exa (replacement for ls)
+		lazygit \           # https://github.com/jesseduffield/lazygit
+		gdu \               # https://github.com/dundee/gdu
+		bottom  \           # https://github.com/ClementTsang/bottom
+		jq \                # https://jqlang.github.io/jq/
+		fd \                # https://github.com/sharkdp/fd
+		ripgrep \           # https://github.com/BurntSushi/ripgrep
+		fzf \               # https://github.com/junegunn/fzf
+		zoxide \            # https://github.com/ajeetdsouza/zoxide (historical directories navigation)
+		yazi \              # https://yazi-rs.github.io/docs/quick-start (terminal file manager)
+		ffmpegthumbnailer \ # https://github.com/dirkvdb/ffmpegthumbnailer (video thumbnails)
+		unar \              # https://theunarchiver.com/command-line (archive preview)
+		poppler \           # https://poppler.freedesktop.org/ (PDF preview)
+		font-symbols-only-nerd-font
