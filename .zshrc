@@ -63,7 +63,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
-  git
+  git                     # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git
   docker                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
   docker-compose          # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose
   mix
