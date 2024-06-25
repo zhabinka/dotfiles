@@ -28,6 +28,8 @@ setup: install links
 
 install:
 	brew install \
+		rename \            # http://plasmasturm.org/code/rename/
+		gnu-sed \           # https://www.gnu.org/software/sed
 		exa \               # https://github.com/ogham/exa (replacement for ls)
 		lazygit \           # https://github.com/jesseduffield/lazygit
 		gdu \               # https://github.com/dundee/gdu
