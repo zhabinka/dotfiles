@@ -239,6 +239,8 @@ psql() {
     if [ "$1" = "logs" ]; then
         shift
         bat /usr/local/var/log/postgresql@15.log
+    else
+        command psql "$@"
     fi
 }
 
