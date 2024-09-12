@@ -233,6 +233,15 @@ alias gdst='git diff --stat'
 alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
 alias vcube='v ~/tmp/cube.md'
 
+# PosgresQL
+
+psql() {
+    if [ "$1" = "logs" ]; then
+        shift
+        bat /usr/local/var/log/postgresql@15.log
+    fi
+}
+
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
