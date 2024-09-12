@@ -127,6 +127,8 @@ ZSH_THEME_HG_PROMPT_PREFIX="%{$fg[magenta]%}hg:‹%{$fg[yellow]%}"
 ZSH_THEME_HG_PROMPT_SUFFIX="%{$fg[magenta]%}› %{$reset_color%}"
 ZSH_THEME_HG_PROMPT_DIRTY=" %{$fg[red]%}✗" ZSH_THEME_HG_PROMPT_CLEAN=""
 
+export BAT_THEME="Solarized (dark)"
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.zsh
 [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 . $(brew --prefix asdf)/libexec/asdf.sh
