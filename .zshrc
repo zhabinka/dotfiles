@@ -149,6 +149,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 alias iexm='iex -S mix'
 alias phx='iex -S mix phx.server'
 alias melixir='cd ~/sandbox/elixir'
+alias merlang='cd ~/sandbox/erlang'
 
 alias v='nvim'
 alias nvim='rm -rf ~/.cache/nvim;nvim'
@@ -172,6 +173,7 @@ alias hisg="history | grep -i";
 alias mecomcharge='cd ~/ecomcharge'
 alias mboapi='cd ~/ecomcharge/boapi'
 alias mwls='cd ~/ecomcharge/wls'
+alias mapplications='~/ecomcharge/devops/applications'
 alias msql='cd ~/sql'
 alias mnotes='cd ~/notes'
 alias tmp='cd ~/tmp'
@@ -219,13 +221,6 @@ alias gdst='git diff --stat'
 # gdnolock='git diff $@ ":(exclude)package-lock.json" ":(exclude)*.lock"'
 # gdt='git diff-tree --no-commit-id --name-only -r'
 
-# alias gpl='git pull'
-# alias gcl='git clone'
-# alias gc='git commit -v'
-# alias gc!='git commit -v --amend'
-# alias gco='git checkout'
-# alias gcob='git checkout -b'
-
 # setopt INTERACTIVE_COMMENTS
 
 # set -o vi
@@ -234,7 +229,6 @@ alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
 alias vcube='v ~/tmp/cube.md'
 
 # PosgresQL
-
 psql() {
     if [ "$1" = "logs" ]; then
         shift
