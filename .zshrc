@@ -136,6 +136,7 @@ export BAT_THEME="Solarized (dark)"
 export PATH=$(brew --prefix openvpn)/sbin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+export PATH=$HOME/.cache/rebar3/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE="1"
 export ASDF_CONFIG_FILE=${HOME}/dotfiles/.asdfrc
 
