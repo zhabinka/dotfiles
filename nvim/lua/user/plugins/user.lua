@@ -1,10 +1,9 @@
 return {
   {
-    -- https://github.com/mbbill/undotree
-    --TODO: Read README
-    --TODO: Assign :UndotreeToggle key
-    "mbbill/undotree",
-    event = "VeryLazy",
+    -- TODO: See another plugins - https://github.com/fedepujol
+    -- https://github.com/fedepujol/move.nvim
+    'fedepujol/move.nvim',
+    event = "BufEnter",
   },
   {
     -- https://github.com/Eandrju/cellular-automaton.nvim
@@ -12,13 +11,13 @@ return {
     event = "VeryLazy"
   },
   {
-    -- https://github.com/tpope/vim-dadbod
-   'tpope/vim-dadbod',
+    -- https://github.com/tpope/vim-dotenv
+    'tpope/vim-dotenv',
     event = "VeryLazy"
   },
   {
-    -- https://github.com/tpope/vim-dotenv
-    'tpope/vim-dotenv',
+    -- https://github.com/tpope/vim-bundler
+    'tpope/vim-bundler',
     event = "VeryLazy"
   }
 }

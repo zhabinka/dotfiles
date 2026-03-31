@@ -19,6 +19,7 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "gruvbox",
+  -- background=dark,
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {

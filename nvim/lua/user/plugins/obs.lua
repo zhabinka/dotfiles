@@ -18,8 +18,33 @@ return {
                 template_name = "note",
                 daily_template_name = "daily",
                 weekly_template_name = "weekly",
+                -- home = "",
+                -- date_glob = "",
+                -- week_glob =""
             },
         }
+
+        -- config for completion source (cmp)
+        local group = vim.api.nvim_create_augroup(
+            "ObsNvim",
+            { clear = true }
+        )
+
+        vim.api.nvim_create_autocmd({ "BufEnter" }, {
+            group = group,
+            pattern = "*.md",
+            desc = "Setup notes nvim-cmp source",
+            callback = function()
+                if obs.vault:is_current_buffer_in_vault() then
+                    require("cmp").setup.buffer {
+                        sources = {
+                            { name = "obs" },
+                            { name = "luasnip" },
+                        },
+                    }
+                end
+            end,
+        })
 
         vim.keymap.set("n", "<leader>nn", "<cmd>ObsNvimFollowLink<cr>")
         vim.keymap.set("n", "<leader>nr", "<cmd>ObsNvimRandomNote<cr>")

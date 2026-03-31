@@ -1,7 +1,12 @@
 return  {
   "hrsh7th/nvim-cmp",
+  dependencies = {
+    "IlyasYOY/obs.nvim",
+  },
   opts = function()
     local cmp = require "cmp"
+    local cmp_source = require "obs.cmp-source"
+    cmp.register_source("obs", cmp_source.new())
 
     -- https://github.com/kristijanhusak/neovim-config/blob/0465871032b6319e1e42b25e7c442c912f5cf398/nvim/lua/partials/plugins/completion.lua#L116
     vim.api.nvim_create_autocmd('FileType', {

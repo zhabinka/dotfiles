@@ -22,7 +22,7 @@ return {
   },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
-  --
+
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   -- {
   --   "L3MON4D3/LuaSnip",
@@ -33,6 +33,17 @@ return {
   --     luasnip.filetype_extend("javascript", { "javascriptreact" })
   --   end,
   -- },
+
+  -- {
+  --   {
+  --     "L3MON4D3/LuaSnip",
+  --     config = function(plugin, opts)
+  --       require "plugins.configs.luasnip"(plugin, opts)
+  --       require "user.snippets.markdown"
+  --     end,
+  --   },
+  -- },
+  
   -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
