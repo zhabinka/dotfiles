@@ -249,3 +249,22 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Pritunl VPN: Basic_set
+# sudo ls -lt /var/lib/pritunl-client/profiles/
+export PRITUNL_PROFILE_ID=kmc9iqoktcgxsfm1
+
+vpn() {
+    if [ "$1" = "stop" ]; then
+        shift
+        pritunl-client stop "$PRITUNL_PROFILE_ID"
+    elif [ "$1" = "status" ]; then
+        shift
+        pritunl-client list
+    elif [ -n "$1" ]; then
+        pritunl-client start "$PRITUNL_PROFILE_ID" --password "$1"
+    else
+        echo "usage: vpn <passcode> | vpn stop | vpn status"
+        return 1
+    fi
+}
