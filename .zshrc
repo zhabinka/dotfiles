@@ -258,13 +258,9 @@ vpn() {
     if [ "$1" = "stop" ]; then
         shift
         pritunl-client stop "$PRITUNL_PROFILE_ID"
-    elif [ "$1" = "status" ]; then
-        shift
+    elif [ "$1" = "status" ] || [ -z "$1" ]; then
         pritunl-client list
-    elif [ -n "$1" ]; then
-        pritunl-client start "$PRITUNL_PROFILE_ID" --password "$1"
     else
-        echo "usage: vpn <passcode> | vpn stop | vpn status"
-        return 1
+        pritunl-client start "$PRITUNL_PROFILE_ID" --password "$1"
     fi
 }
