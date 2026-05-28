@@ -137,11 +137,34 @@ export PATH=$(brew --prefix openvpn)/sbin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
 export PATH=$HOME/.cache/rebar3/bin:$PATH
-export PATH=$HOME/clickhouse/bin:$PATH
 export HOMEBREW_NO_AUTO_UPDATE="1"
 export ASDF_CONFIG_FILE=${HOME}/dotfiles/.asdfrc
 
 zstyle ':completion:*:*:make:*' tag-order 'targets'
+
+# Clickhouse
+export PATH=$HOME/clickhouse/bin:$PATH
+ch() {
+    case "$1" in
+        start)
+            clickhouse-server \
+                --config-file=$HOME/clickhouse/etc/config.xml \
+                --pid-file=$HOME/clickhouse/run/clickhouse-server.pid \
+                --daemon
+            ;;
+        stop)
+            kill "$(cat $HOME/clickhouse/run/clickhouse-server.pid)"
+            ;;
+        status)
+            curl -s http://localhost:8123/ping
+            ps aux | grep "[c]lickhouse-server"
+            ;;
+        *)
+            echo "usage: ch {start|stop|status}" >&2
+            return 1
+            ;;
+    esac
+}
 
 # Erlang & Elixir
 export KERL_CONFIGURE_OPTIONS="--enable-wx \
